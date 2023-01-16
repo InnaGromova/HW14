@@ -1,6 +1,7 @@
 package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -32,7 +33,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("GenerateTests for Top selection")
     void generatedTest() {
         step("Open https://top-select-development.com/", () -> {
-            Selenide.open("https://top-select-development.com/");
+            open("https://top-select-development.com/");
         });
 
         step("Checking the main menu", () -> {

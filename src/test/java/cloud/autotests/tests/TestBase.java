@@ -25,7 +25,6 @@ public class TestBase {
     static void beforeAll() {
 
         DriverSettings.configure();
-        Configuration.baseUrl = config.baseUrl();
     }
 
     @BeforeEach
