@@ -1,24 +1,22 @@
 # Проект по автоматизации тестирования сайта "Top selection"
 
-## :cherry_blossom:	Содержание
+## Содержание
 
 
-> ➠ [Стек технологий](#classical_building-стек-технологий)
+> ➠ [Стек технологий](#стек-технологий)
 >
-> ➠ [Реализованные проверки](#earth_africa-реализованные-проверки)
+> ➠ [Реализованные проверки](#реализованные-проверки)
 >
 > ➠ [Запуск тестов из терминала](#запуск-тестов-из-терминала)
 >
 > ➠ [Запуск тестов в Jenkins](#запуск-тестов-из-jenkins)
 >
-> ➠ [Отчет о результатах тестирования в Allure Report](#skier-главная-страница-allure-отчета)
+> ➠ [Уведомления в Telegram](#уведомления-в-telegram)
 >
-> ➠ [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
->
-> ➠ [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
+> ➠ [Пример запуска теста](#пример-запуска-теста)
 
 
-## :classical_building: Стек технологий
+## Стек технологий
 
 <p align="center">
 <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
@@ -46,7 +44,7 @@
 > <code>Jenkins</code> выполняет запуск тестов.
 > После завершения прогона отправляются уведомления с помощью бота в <code>Telegram</code>.
 
-## :earth_africa: Реализованные проверки
+## Реализованные проверки
 
 > Разработаны автотесты на <code>UI</code>.
 ### UI
@@ -59,13 +57,13 @@
 
 ## Запуск тестов из терминала
 
-### :robot: Локальный запуск тестов
+### Локальный запуск тестов
 
 ```
 gradle clean test
 ```
 
-### :robot: Удаленный запуск тестов
+### Удаленный запуск тестов
 
 ```
 gradle clean test
@@ -78,7 +76,7 @@ gradle clean test
 -Dthreads=${THREADS}
 ```
 
-### :robot: Параметры сборки
+### Параметры сборки
 
 > <code>REMOTE_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 >
@@ -103,19 +101,19 @@ gradle clean test
 </p>
 
 
-### :skier: Allure-отчет
+### Allure-отчет
 
 <p align="center">
 <img title="Allure Overview" src="image/Отчет.jpg" width="800">
 </p>
 
-### :eye_speech_bubble: Тест-кейсы
+### Тест-кейсы
 
 <p align="center">
 <img title="Allure Behaviors" src="image/Тест-кейсы.jpg" width="800">
 </p>
 
-## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram
+## Уведомления в Telegram
 
 > После завершения сборки, Вам будет отправлено уведомление в Telegram с отчетом о прохождении.
 
@@ -123,7 +121,7 @@ gradle clean test
 <img title="Telegram Notifications" src="image/Уведомление.jpg" width="800">
 </p>
 
-## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста.
+## Пример запуска теста.
 
 > Для каждого тест-кейса будет записано видео прохождения. Пример:
 <p align="center">
